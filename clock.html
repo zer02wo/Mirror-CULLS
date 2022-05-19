@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script src="js/clock.js"></script>
+</head>
+<body onload="init()">
+  <div id="loading">
+    <img id="loader" src="img/loading.svg">
+  </div>
+  <div id="style">
+    <div id="gesture"></div>
+    <div id="digital-clock">
+      <div id="hour"></div>
+      <p>:</p>
+      <div id="min"></div>
+      <p>:</p>
+      <div id="sec"></div>
+    </div>
+    <div id="analog-clock">
+      <div id="details">
+        <div id="analog-time">
+          <div id="hr"></div>
+          <p>:</p>
+          <div id="mn"></div>
+          <p>:</p>
+          <div id="sc"></div>
+        </div>
+        <div id="analog-date">
+          <div id="dw"></div>
+          <p>-</p>
+          <div id="dd"></div>
+          <p>/</p>
+          <div id="mm"></div>
+          <p>/</p>
+          <div id="yyyy"></div>
+        </div>
+      </div>
+      <svg>
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2.5" result="colouredBlur"/>
+            <feMerge>
+						    <feMergeNode in="colouredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+          </filter>
+        </defs>
+
+        <circle class="hand" cx="230" cy="230" r="180" stroke-width="7"/>
+        <path id="arcHour" class="arc" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+        <circle id="dotHour" class="finger" r="8" filter="url(#glow)"/>
+
+        <circle class="hand" cx="230" cy="230" r="205" stroke-width="5"/>
+        <path id="arcMin" class="arc" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+        <circle id="dotMin" class="finger" r="6" filter="url(#glow)"/>
+
+        <circle class="hand" cx="230" cy="230" r="225" stroke-width="3"/>
+        <path id="arcSec" class="arc" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+        <circle id="dotSec" class="finger" r="4" filter="url(#glow)"/>
+      </svg>
+    </div>
+    <div id="digital-date">
+      <div id="dow"></div>
+      <p>-</p>
+      <div id="day"></div>
+      <p>/</p>
+      <div id="mon"></div>
+      <p>/</p>
+      <div id="year"></div>
+    </div>
+  </div>
+</body>
+</html>

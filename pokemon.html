@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script src="js/config.js"></script>
+  <script src="js/pokemon.js"></script>
+</head>
+<body onload="init()">
+  <div id="loading">
+    <img id="loader" src="img/loading.svg">
+  </div>
+  <div id="style">
+    <div id="gesture"></div>
+    <div id="error"></div>
+    <div id="pokedex">
+      <div id="pokemon-container">
+        <img id="sprite">
+        <p id="pokemon"></p>
+        <p id="name"></p>
+        <p id="measurements"></p>
+        <div id="types">
+          <img id="type1" class="type">
+          <img id="type2" class="type">
+        </div>
+      </div>
+      <div id="characteristics">
+        <div id="flavour-container">
+          <p class="subheading">Description</p>
+          <p id="genus"></p>
+          <p id="flavour"></p>
+        </div>
+        <div id="stats">
+          <p class="subheading">Stats</p>
+          <div id="hp-container" class="stat-container">
+            <p class="stat-label">HP: </p>
+            <progress id="hp" class="stat" value="50" max="255"></progress>
+          </div>
+          <div id="attack-container" class="stat-container">
+            <p class="stat-label">Attack: </p>
+            <progress id="attack" class="stat" value="50" max="255"></progress>
+          </div>
+          <div id="defence-container" class="stat-container">
+            <p class="stat-label">Defence: </p>
+            <progress id="defence" class="stat" value="50" max="255"></progress>
+          </div>
+          <div id="spAtk-container" class="stat-container">
+            <p class="stat-label">Special Attack: </p>
+            <progress id="spAtk" class="stat" value="50" max="255"></progress>
+          </div>
+          <div id="spDef-container" class="stat-container">
+            <p class="stat-label">Special Defence: </p>
+            <progress id="spDef" class="stat" value="50" max="255"></progress>
+          </div>
+          <div id="speed-container" class="stat-container">
+            <p class="stat-label">Speed: </p>
+            <progress id="speed" class="stat" value="50" max="255"></progress>
+          </div>
+        </div>
+        <div id="moves">
+          <p class="subheading">Moves</p>
+          <div id="moves-container">
+            <div class="move"></div>
+            <div class="move"></div>
+            <div class="move"></div>
+            <div class="move"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="waves-container">
+    <svg id="shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path id="shadow-path" fill="#000" fill-opacity="1" d="M0,0L40,10.7C80,21,160,43,240,90.7C320,139,400,213,480,208C560,203,640,117,720,80C800,43,880,53,960,80C1040,107,1120,149,1200,181.3C1280,213,1360,235,1400,245.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    <div id="shadow-base"></div>
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path id="wave-path" fill="#000" fill-opacity="1" d="M0,0L40,10.7C80,21,160,43,240,90.7C320,139,400,213,480,208C560,203,640,117,720,80C800,43,880,53,960,80C1040,107,1120,149,1200,181.3C1280,213,1360,235,1400,245.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    <div id="wave-base"></div>
+  </div>
+</body>

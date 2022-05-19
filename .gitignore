@@ -1,0 +1,12 @@
+._*
+.DS_Store
+css/weather-icons/_builder
+css/weather-icons/_docs
+css/weather-icons/sass
+css/weather-icons/less
+css/weather-icons/.gitignore
+css/weather-icons/.npmignore
+css/weather-icons/bower.json
+css/weather-icons/package.json
+__pycache__
+credentials.json

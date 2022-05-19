@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script src="js/config.js"></script>
+  <script src="js/fitbit.js"></script>
+</head>
+<body onload="init()">
+  <div id="loading">
+    <img id="loader" src="img/loading.svg">
+  </div>
+  <div id="style">
+    <div id="error"></div>
+    <div id="gesture"></div>
+    <div id="activity">
+      <div id="steps-container" class="fitbit-container">
+        <canvas id="steps" width="240" height="240"></canvas>
+        <img id="steps-img" class="convert-white fitbit-icon" src="img/fitbit/sneaker.svg">
+      </div>
+      <div id="heart-rate-container">
+        <div id="calories-container" class="fitbit-container">
+          <canvas id="calories" width="240" height="240"></canvas>
+          <img id="calories-img" class="convert-white fitbit-icon" src="img/fitbit/calories.svg">
+        </div>
+        <img id="heart-rate-img" src="img/fitbit/cardiogram.svg">
+        <p id="heart-rate"></p>
+      </div>
+      <div id="floors-container" class="fitbit-container">
+        <canvas id="floors" width="240" height="240"></canvas>
+        <img id="floors-img" class="convert-white fitbit-icon" src="img/fitbit/floor.svg">
+      </div>
+    </div>
+
+    <div id="physical">
+      <div id="weight-container" class="fitbit-container">
+        <canvas id="weight" width="240" height="240"></canvas>
+        <img id="weight-img" class="convert-white fitbit-icon" src="img/fitbit/scale.svg">
+      </div>
+      <div id="weight-info">
+        <p id="bmi"></p>
+        <p id="weight-lost"></p>
+        <p id="weight-remain"></p>
+        <p id="body-fat-remain"></p>
+      </div>
+      <div id="body-fat-container" class="fitbit-container">
+        <canvas id="body-fat" width="240" height="240"></canvas>
+        <img id="body-fat-img" class="convert-white fitbit-icon" src="img/fitbit/gym.svg">
+      </div>
+    </div>
+
+    <div id="sleep">
+      <div id="stages-container" class="fitbit-container">
+        <canvas id="stages" width="480" height="240"></canvas>
+        <img id="stages-img" class="convert-white fitbit-icon" src="img/fitbit/moon.svg">
+      </div>
+      <div id="goal-sleep-container" class="fitbit-container">
+        <canvas id="goal-sleep" width="240" height="240"></canvas>
+        <img id="goal-sleep-img" class="convert-white fitbit-icon" src="img/fitbit/target.svg">
+      </div>
+    </div>
+
+    <div id="nutrition">
+      <div id="macros-container" class="fitbit-container">
+        <canvas id="macros" width="480" height="240"></canvas>
+        <img id="macros-img" class="convert-white fitbit-icon" src="img/fitbit/supplement.svg">
+      </div>
+      <div id="water-container" class="fitbit-container">
+        <canvas id="water" width="240" height="240"></canvas>
+        <img id="water-img" class="convert-white fitbit-icon" src="img/fitbit/water-bottle.svg">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

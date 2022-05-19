@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/weather-icons/css/weather-icons.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/weather-icons/css/weather-icons-wind.min.css"/>
+  <script src="js/config.js"></script>
+  <script src="js/weather.js"></script>
+</head>
+<body onload="init()">
+  <div id="loading">
+    <img id="loader" src="img/loading.svg">
+  </div>
+  <div id="style">
+    <div id="gesture"></div>
+    <div id="error"></div>
+    <div id="weather">
+      <div id="today" class="shift">
+        <p id="city"></p>
+        <p id="today-weather"></p>
+        <p id="today-details"></p>
+        <hr id="divider"/>
+      </div>
+      <div id="week" class="hidden">
+        <div id="day-2" class="weather"></div>
+        <div id="day-3" class="weather"></div>
+        <div id="day-4" class="weather"></div>
+        <div id="day-5" class="weather"></div>
+        <div id="day-6" class="weather"></div>
+        <div id="day-7" class="weather"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

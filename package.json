@@ -1,0 +1,32 @@
+{
+  "name": "Mirror-CULLS",
+  "version": "1.0.0",
+  "description": "A gesture controlled smart mirror application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "chart.js": "^2.9.3",
+    "clock": "^1.0.2",
+    "colorthief": "^2.3.0",
+    "electron-json-storage-sync": "^1.1.1",
+    "fitbit-node": "^2.2.0",
+    "googleapis": "^47.0.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "pokeapi-js-wrapper": "^1.2.0",
+    "python-shell": "^1.0.8",
+    "spotify-web-api-js": "^1.2.0",
+    "three": "^0.115.0",
+    "typicons.font": "^2.0.9"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "electron": "^6.0.12"
+  }
+}

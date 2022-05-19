@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script src="js/config.js"></script>
+  <script src="js/spotify.js"></script>
+  <link rel="stylesheet" type="text/css" href="node_modules/typicons.font/src/font/typicons.css"/>
+</head>
+<body onload="init()">
+  <div id="loading">
+    <img id="loader" src="img/loading.svg">
+  </div>
+  <div id="style">
+    <div id="gesture"></div>
+    <div id="error"></div>
+    <div id="player">
+      <div id="vinyl-container">
+        <img id="vinyl"/>
+        <div id="vinyl-center"></div>
+      </div>
+      <div id="volume-controls">
+        <div id="volume-down" class="icon"><i class="typcn typcn-volume-mute"></i></div>
+        <input id="volume" type="range" min="0" max="100" value="100"/>
+        <div id="volume-up" class="icon"><i class="typcn typcn-volume-up"></i></div>
+      </div>
+      <div id="player-controls">
+        <div class="icon"><i id="shuffle" class="typcn typcn-arrow-shuffle"></i></div>
+        <div class="icon"><i id="previous" class="typcn typcn-media-rewind"></i></div>
+        <div class="icon"><i id="play" class="typcn typcn-media-play"></i></div>
+        <div class="icon"><i id="next" class="typcn typcn-media-fast-forward"></i></div>
+        <div class="icon"><i id="repeat" class="typcn typcn-arrow-repeat"></i></div>
+      </div>
+    </div>
+    <div id="player-info">
+      <div id="player-details">
+        <p id="track"></p>
+        <p id="artist"></p>
+        <progress id="progress" max="100" value="100"></progress>
+        <div id="track-time">
+          <p id="current"></p>
+          <p id="duration"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

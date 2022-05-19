@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A864C7" offset="0%"></stop>
+            <stop stop-color="#C261D4" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="30" height="30" rx="15"></rect>
+        <filter x="-50.0%" y="-50.0%" width="200.0%" height="200.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0  0 0 0 0 0  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Types/Poison" transform="translate(5.000000, 5.000000)">
+            <g id="Group" transform="translate(5.000000, 5.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <path d="M15,8 C19.1421356,8 22.5,10.9637135 22.5,14.6196393 C22.5,16.5658413 21.5484224,18.3158787 20.0335172,19.527075 C20.0972721,19.7866086 20.1315789,20.0640015 20.1315789,20.3521443 C20.1315789,21.8145146 19.2479304,23 18.1578947,23 C17.511838,23 16.9382819,22.5835564 16.5782355,21.9398439 C16.2196128,22.5835564 15.6460568,23 15,23 C14.2912876,23 13.6698203,22.4988648 13.3217401,21.7463189 C12.9749166,22.4988648 12.3534493,23 11.6447368,23 C10.5547012,23 9.67105263,21.8145146 9.67105263,20.3521443 C9.67105263,20.0141793 9.71824896,19.6910029 9.80428176,19.3938307 C8.38433269,18.1896897 7.5,16.4958156 7.5,14.6196393 C7.5,10.9637135 10.8578644,8 15,8 Z M14.9013158,11.3901711 C12.4487355,11.3901711 10.4605263,12.8948256 10.4605263,14.750911 C10.4605263,16.6069965 12.4487355,18.111651 14.9013158,18.111651 C17.3538961,18.111651 19.3421053,16.6069965 19.3421053,14.750911 C19.3421053,12.8948256 17.3538961,11.3901711 14.9013158,11.3901711 Z" id="Oval-3" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
